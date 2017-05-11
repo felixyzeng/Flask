@@ -11,9 +11,13 @@
 2.然后创建一个虚拟环境来隔离其它项目（虽然现在还没有其它项目，但以后肯定会有的）  pip install virtualenv
 3.virtualenv /home/venv
 4.source /home/venv/bin/activate  这个命令以后在做这个项目的时候要经常用
-5.安装flask(pip install flask)  flask以后会有各种依赖文件，可以写在requirements中 用pip install -r requirements.txt一次性安装
-6.安装uwsgi(pip install uwsgi)  uwsgi的依赖包有gcc和python-dev 分别可以用pip install gcc和yum install python-devel的方式安装，如果安装出错就试一下这两个命令
-7.安装nginx(yum install nginx)  
+5.安装flask(pip install flask)  
+flask以后会有各种依赖文件，可以写在requirements中 用pip install -r requirements.txt一次性安装
+6.安装uwsgi(pip install uwsgi)  
+uwsgi的依赖包有gcc和python-dev 分别可以用pip install gcc和yum install python-devel的方式安装，如果安装出错就试一下这两个命令
+在/home/venv下信件uwsgiconfig.ini
+
+7.安装nginx(yum install nginx)  
 
 tips:
 1.运行uwsgi时出问题import flask一直报错，后来退出venv虚拟环境后在全局环境下安装flask就成功了，这个问题以后再研究
